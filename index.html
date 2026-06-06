@@ -1,0 +1,22 @@
+services:
+  website:
+    image: nginx:latest
+    container_name: week14-website
+    ports:
+      - "80:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
+    restart: always
+[ec2-user@ip-10-0-2-254 ~]$ cat index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 14 Docker Compose Project</title>
+</head>
+<body>
+    <h1>Docker Compose Deployment Successful</h1>
+    <p>This website is running through Docker Compose on AWS EC2.</p>
+    <p>Built by Olusola Fatoba.</p>
+</body>
+</html>
+
