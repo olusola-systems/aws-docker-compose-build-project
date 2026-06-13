@@ -1,9 +1,0 @@
-services:
-  website:
-    build: .
-    container_name: week15-website
-
-    ports:
-      - "80:80"
-
-    restart: always
