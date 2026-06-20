@@ -312,13 +312,13 @@ Next project introduces container image registries and image lifecycle managemen
 
 Instead of building Docker images directly on an EC2 instance, images will be built once, stored in a registry, and pulled onto deployment servers when needed.
 
-Topics include:
+## Future Improvements
 
-* Docker Hub
-* Amazon Elastic Container Registry (ECR)
-* Image tagging and versioning
-* Image push and pull workflows
-* Registry authentication
-* Deployment using pre-built container images
+- Deploy container images from Amazon ECR into Amazon ECS.
+- Implement task definitions and ECS services.
+- Integrate Application Load Balancers with ECS workloads.
+- Configure CloudWatch logging and monitoring.
+- Automate image builds and ECR deployments through GitHub Actions.
+- Explore ECS Fargate for serverless container hosting.
 
 This represents an important shift from building containers on servers to distributing standardized images across environments.
